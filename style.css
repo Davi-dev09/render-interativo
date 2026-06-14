@@ -90,3 +90,10 @@ body{
         font-size: 12px;
     }
 }
+
+.before-image,
+.after-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
