@@ -16,13 +16,19 @@ function updateSlider(clientX) {
 }
 
 comparison.addEventListener("pointerdown", (event) => {
+    event.preventDefault();
     comparison.setPointerCapture(event.pointerId);
     updateSlider(event.clientX);
 });
 
 comparison.addEventListener("pointermove", (event) => {
     if (!comparison.hasPointerCapture(event.pointerId)) return;
+    event.preventDefault();
     updateSlider(event.clientX);
+});
+
+comparison.addEventListener("dragstart", (event) => {
+    event.preventDefault();
 });
 
 comparison.addEventListener("pointerup", (event) => {
