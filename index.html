@@ -10,24 +10,20 @@
 <body>
 
     <main class="container">
+        <div class="comparison" id="comparison">
+            <img src="img/render igual proporção 4x5.png" alt="Imagem antes" class="comparison-image img-base">
 
-<div class="comparison">
+            <div class="overlay" id="overlay">
+                <img src="img/AR_4x5_3072x3840.png" alt="Imagem depois" class="comparison-image img-top">
+            </div>
 
-    <img src="img/render igual proporção 4x5.png" class="img-base">
-a 1
-    <div class="overlay" id="overlay">
-        <img src="img/AR_4x5_3072x3840.png" class="img-top">
-    </div>
-
-    <div class="handle" id="handle">
-        <div class="circle">
-            ◀ ▶
-            <span>Arraste</span>
+            <div class="handle" id="handle" aria-hidden="true">
+                <div class="circle">
+                    <span class="arrows">&larr; &rarr;</span>
+                    <span>Arraste</span>
+                </div>
+            </div>
         </div>
-    </div>
-
-</div>
-
     </main>
 
     <script src="script.js"></script>
